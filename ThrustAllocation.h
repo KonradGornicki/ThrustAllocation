@@ -21,7 +21,7 @@ class ThrustAllocation
  private:
    Servo _thruster_1,_thruster_2,_thruster_3,_thruster_4;
    double _x=0,_y=0,_psi=0,_pwm1=0, _pwm2=0,_pwm3=0,_pwm4=0;
-   double _linear_scale=400, _angular_scale=100;
+   double _linear_scale=200, _angular_scale=100;
    double _a=1.0556,_b=1.1955;
 };
 
