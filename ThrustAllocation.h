@@ -1,7 +1,7 @@
 /*
 ThrustAllocation.h - library for allocating (distributing)
 pwm signal to four Mallard's thrusters. The input is velocity vector
-[x_dot y_dot  psi_dot]. Output is pwm1 to pwm4.
+[x_dot y_dot  psi_dot]. Output is puls width modulation: pwm1 to pwm4.
 Created by Konrad Gornicki, September 27, 2019.
 */
 

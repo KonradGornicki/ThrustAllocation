@@ -47,7 +47,11 @@ void callback(const geometry_msgs::Twist& twist_msg)
     v = twist_msg.linear.y;
     r = twist_msg.angular.z;  
 
+    // Thrust aloccation hapens here. Pass the vector of linear and angular velocities (u,v,r)
+    // to get distributed vecor (pwm1,2,3 or 4) to all four thrusters of mallard. The pwm_out is 
+    // for testing purposes only. Switch between return value of _pwm* inside ThrustAllocation.cpp to test different output.
     pwm_out = allocate.output_pwm(u,v,r);
+    // This worked as well:
     // pwm_out = allocate.output_pwm(twist_msg);
  
     //Publish...

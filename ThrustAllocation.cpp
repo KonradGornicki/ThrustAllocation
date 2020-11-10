@@ -28,7 +28,7 @@ ThrustAllocation::ThrustAllocation(int pin_1, int pin_2, int pin_3, int pin_4)
 // ----- Functions -----
 double ThrustAllocation::output_pwm(float x_body_input, float y_body_input, float psi_body_input)
 {   
-    //Takes /joy commands and transform them to pwm.
+    //Takes Twist commands and transform them to pwm.
     _x = (x_body_input)*_linear_scale;
     _y = (y_body_input)*_linear_scale;
     _psi = (-psi_body_input)*_angular_scale;
