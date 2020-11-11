@@ -13,6 +13,7 @@ Created by Konrad Gornicki, September 27, 2019.
 #include <Servo.h>
 // #include "geometry_msgs/Twist.h"
 
+
 class ThrustAllocation
 {
  public:

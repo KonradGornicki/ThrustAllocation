@@ -10,6 +10,7 @@ Created by Konrad Gornicki, September 27, 2019.
 #include <Servo.h>
 // #include "geometry_msgs/Twist.h"
 
+
 // ----- Constructor -----
 ThrustAllocation::ThrustAllocation(int pin_1, int pin_2, int pin_3, int pin_4)
 {   
